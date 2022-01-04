@@ -8,7 +8,7 @@ type CryptoCardProp={
 }
 const CryptoCard = ({coin}:CryptoCardProp) => {
     return (
-        <div className='bg-gray-100 rounder-lg  '>
+        <div className='bg-gray-100 rounded-lg  '>
             {/* head  */}
             <div className="flex justify-between items-center p-4 border-b">
                 <span>{`${coin.rank}.${coin.name}`}</span>

@@ -12,7 +12,7 @@ const Layout = ({ children }:layoutProp) => {
             <Sidebar/>
             </div>
             <div className="col-span-8 md:col-span-9">
-            {children}
+                {children}
             </div>
         </div>
     )

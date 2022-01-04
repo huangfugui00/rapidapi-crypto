@@ -11,7 +11,7 @@ const Sidebar = () => {
     const [navItem,setNavItem] = useState('home')
 
     return (
-        <div className='bg-indigo-800 h-full grid grid-cols-12 py-4'>
+        <div className='bg-indigo-800 h-full min-h-screen grid grid-cols-12 py-4'>
             <div className="col-span-9 ">  
                 {/* brand */}
                 <div className="flex items-center gap-4 mx-4">
@@ -37,7 +37,7 @@ const Sidebar = () => {
                                 <span className="text-sm">Home</span>
                             </a>
                         </Link>
-                        <Link href='/'>
+                        <Link href='/cryptocurrencies'>
                             <a className= {`px-2 mb-4 flex items-center gap-2 text-gray-200  ${navItem==='cryptocurrency'&&'bg-blue-500'}`}
                             onClick={()=>setNavItem('cryptocurrency')}>
                                 <MultilineChartOutlinedIcon/>
