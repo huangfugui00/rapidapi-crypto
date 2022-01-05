@@ -28,7 +28,7 @@ const Cryptocurrencies = ({coins}:CryptocurrenciesProp) => {
 
       
     return (
-        <div className="p-8">
+        <div>
             
             {coins.length>20 && (
                 <div className="mb-4">
@@ -40,17 +40,17 @@ const Cryptocurrencies = ({coins}:CryptocurrenciesProp) => {
                 </div>
             )}
       
-        <div className="grid grid-cols-12 gap-8">
-            {
-                coinsDisplay?.map((coin)=>( 
-                    <div className="col-span-6 lg:col-span-4 xl:col-span-3">
-                        <CryptoCard coin={coin}/>
-                    </div>
-                ))
-            }
-            
-            
-        </div>
+            <div className="grid grid-cols-12 gap-8">
+                {
+                    coinsDisplay?.map((coin)=>( 
+                        <div className="col-span-6 lg:col-span-4 xl:col-span-3">
+                            <CryptoCard coin={coin}/>
+                        </div>
+                    ))
+                }
+                
+                
+            </div>
         </div>
     )
 }

@@ -17,6 +17,20 @@
 }
 
 
+.coin-desc h3{
+    font-weight: 700;
+    font-size:20px;
+    color: var(--pink);
+    margin-top: 12px;
+}
+
+.coin-desc p{
+    font-size:16px;
+    color: gray;
+    margin-top: 4px;
+}
+
+
 @media  (min-width: 1280px ) {
     .my-container{
         width:1124px;
@@ -35,3 +49,4 @@
         width:95vw;
     }
 }
+

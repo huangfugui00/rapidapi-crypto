@@ -1,7 +1,9 @@
 import React from 'react'
-import {coin} from '../utils/type'
 import Image from 'next/image'
+import Link from 'next/link'
+import {coin} from '../utils/type'
 import millify  from 'millify'
+
 
 type CryptoCardProp={
     coin:coin
@@ -11,7 +13,11 @@ const CryptoCard = ({coin}:CryptoCardProp) => {
         <div className='bg-gray-100 rounded-lg  '>
             {/* head  */}
             <div className="flex justify-between items-center p-4 border-b">
-                <span>{`${coin.rank}.${coin.name}`}</span>
+                <Link href={`/crypto/${coin.uuid}`}>
+                    <a>
+                    <span>{`${coin.rank}.${coin.name}`}</span>
+                    </a>
+                </Link>
                 <div className="relative h-8 w-8">
                     <Image src={coin.iconUrl} layout="fill" objectFit="cover"/>
                 </div>

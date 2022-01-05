@@ -9,7 +9,7 @@ const Index = ({coins}:InferGetStaticPropsType<typeof getStaticProps>) => {
         return<></>
     }
     return (
-        <div>
+        <div className="p-8">
             <Cryptocurrencies coins={coins}/>
         </div>
     )

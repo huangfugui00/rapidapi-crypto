@@ -23,10 +23,29 @@ export type coin={
     name:string,
     color:string,
     iconUrl:string,
+    description:string,
     marketCap:number,
     price:number,
     btcPrice:string,
     listedAt:string,
     change:string,
     rank:string,
+    volume:number,
+    allTimeHigh:{
+        price:number,
+    },
+    numberOfMarkets:number,
+    numberOfExchanges:number,
+    supply:{
+        confirmed:boolean,
+        circulating:number,
+        total:number,
+    }
+
+}
+
+export type historyData={
+    price:number,
+    timestamp:string,
+
 }
