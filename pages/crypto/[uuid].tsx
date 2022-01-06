@@ -98,7 +98,7 @@ const Index = ({coin}:InferGetStaticPropsType<typeof getStaticProps>) => {
                         {
                             stats.map((stat)=>
                             <div className="flex justify-between items-center py-2 border-b">
-                                <div className="flex items-center">
+                                <div className="flex items-center gap-2">
                                     <div className="text-sm">{stat.icon}</div>
                                     <span className="text-xs ">{stat.title}</span>
                                 </div> 
@@ -116,7 +116,7 @@ const Index = ({coin}:InferGetStaticPropsType<typeof getStaticProps>) => {
                         {
                             genericStats.map((stat)=>
                             <div className="flex justify-between items-center py-2 border-b">
-                                <div className="flex items-center">
+                                <div className="flex items-center gap-2">
                                     <div className="text-sm">{stat.icon}</div>
                                     <span className="text-xs ">{stat.title}</span>
                                 </div> 

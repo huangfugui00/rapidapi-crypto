@@ -64,7 +64,7 @@ const LineChart = ({historys}:LineChartProp) => {
 
     return (
         <div>
-                  <Line data={data} options={options} />
+                  <Line data={data}  />
             
         </div>
     )

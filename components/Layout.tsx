@@ -7,11 +7,11 @@ type layoutProp = {
 
 const Layout = ({ children }:layoutProp) => {
     return (
-        <div className="grid grid-cols-12">
-            <div className="col-span-4 md:col-span-3">
+        <div className="md:grid md:grid-cols-12">
+            <div className="hidden md:block  md:col-span-3">
             <Sidebar/>
             </div>
-            <div className="col-span-8 md:col-span-9">
+            <div className=" md:col-span-9">
                 {children}
             </div>
         </div>

@@ -2,7 +2,7 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ["cdn.coinranking.com","jsonkeeper.com"],
+    domains: ["cdn.coinranking.com","www.bing.com"],
     formats: ['image/avif', 'image/webp'],
   },
   env:{

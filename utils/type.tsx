@@ -17,6 +17,26 @@ export type exchange={
     // marketShare
 }
 
+interface image{
+        thumbnail:{
+            contentUrl:string
+        }
+    
+}
+interface provider{
+    image:image
+    name:string,
+}
+
+export type newsType={
+    url:string,
+    name:string,
+    description:string,
+    image:image,
+    provider:provider[]
+    datePublished:string,
+}
+
 export type coin={
     uuid:string,
     symbol:string,

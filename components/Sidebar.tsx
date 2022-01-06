@@ -44,14 +44,8 @@ const Sidebar = () => {
                                 <span className="text-sm">Cryptocurrency</span>
                             </a>
                         </Link>
-                        <Link href='/'>
-                            <a className= {`px-2 mb-4 flex items-center gap-2 text-gray-200   ${navItem==='exchanges'&&'bg-blue-500'}`}
-                            onClick={()=>setNavItem('exchanges')}>
-                                <CurrencyExchangeOutlinedIcon/>
-                                <span className="text-sm">Exchanges</span>
-                            </a>
-                        </Link>
-                        <Link href='/'>
+                      
+                        <Link href='/news'>
                             <a className= {`px-2 mb-4 flex items-center gap-2 text-gray-200   ${navItem==='news'&&'bg-blue-500'}`}
                             onClick={()=>setNavItem('news')}>
                                 <NewspaperOutlinedIcon/>

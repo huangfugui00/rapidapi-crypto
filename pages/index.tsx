@@ -32,10 +32,6 @@ export default function Home({crypto,coins}:InferGetStaticPropsType<typeof getSt
         </div>        
         <Cryptocurrencies coins={coins}/>
 
-
-
-
-
       </main>
       
 
